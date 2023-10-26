@@ -15,3 +15,5 @@ public class Main2 {
 		hotel1.inform();
 	}
 }
+
+

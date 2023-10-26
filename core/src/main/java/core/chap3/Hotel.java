@@ -18,9 +18,9 @@ public class Hotel {
 	public Hotel() {}
 	
 	// 생성자 주입
-	public Hotel(Restaurant restarant, Chef headChef) {
+	public Hotel(Restaurant restaurant, Chef headChef) {
 		super();
-		this.restaurant = restarant;
+		this.restaurant = restaurant;
 		this.headChef = headChef;
 	}
 	
@@ -47,8 +47,8 @@ public class Hotel {
 	//setter 주입
 	@Autowired
 	@Qualifier("asianRes")
-	public void setRestaurant(Restaurant restarant) {
-		this.restaurant = restarant;
+	public void setRestaurant(Restaurant restaurant) {
+		this.restaurant = restaurant;
 	}
 	
 	

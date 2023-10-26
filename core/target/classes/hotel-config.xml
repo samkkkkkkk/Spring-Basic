@@ -9,15 +9,15 @@ http://www.springframework.org/schema/beans/spring-beans.xsd">
 		<property name="headChef" ref="asianChef" /> <!-- name은 setter메서드의 이름 -->
 		<property name="restaurant" ref="asianRes" />
 	</bean>
-
-
+	
 	<bean id="asianRes" class="core.chap2.AsianRestaurant">
 		<property name="chef" ref="asianChef"></property> <!-- property: setter메서드를 통한 주입 ref에는 등록된 bean id -->
 		<property name="course" ref="susi"></property>
 	</bean>
 	<bean id="susi" class="core.chap2.SusiCourse" />
 	<bean id="asianChef" class="core.chap2.AsianChef" />
-
+	
+	
 	<!-- ============================================================================= -->
 
 	<bean id="hotel2" class="core.chap2.Hotel">
@@ -32,11 +32,6 @@ http://www.springframework.org/schema/beans/spring-beans.xsd">
 
 	<bean id="frenchChef" class="core.chap2.FrenchChef" />
 	<bean id="frenchCourse" class="core.chap2.FrenchCourse" />
-
-
-
-
-
 
 
 </beans>
